@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .card{
+            overflow: hidden;
+            z-index: 1;
+            filter: grayscale(100%);
+            transition: 0.6s;
+            
+        }
+        .card:hover{
+            color: #393E46;
+            filter: grayscale(0%);
+        }
+        .card::before{
+            content: "";
+            position: absolute;
+            left:-420px;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color:#D8D9CF;
+            transition: 0.6s;
+            z-index: -1;
+        }
+        .card:hover::before{
+            left: 0px;
+        }
+        .card-img-top{
+            width: 100%;
+            height: 300px;
+        }
+
+section{
+    position: relative;
+    height: 95vh;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+}
+
+
+    </style>
+    <section>
+    <div class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 m-auto">
+                <div class="card my-2 border-0 shadow ">
+                    <img src="./img/1.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="text-center fw-bold" >bootstrap card-1</h3>
+                        </div>
+                        <hr class="w-75 mx-auto">
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt accusantium
+                                debitis, itaque odio reiciendis quibusdam adipisci deleniti excepturi fuga.</p>
+                        </div>
+                        <a href="" class="btn btn-primary">go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 m-auto">
+                <div class="card my-2 border-0 shadow ">
+                    <img src="./img/2.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="text-center fw-bold">bootstrap card-1</h3>
+                        </div>
+                        <hr class="w-75 mx-auto">
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt accusantium
+                                debitis, itaque odio reiciendis quibusdam adipisci deleniti excepturi fuga.</p>
+                        </div>
+                        <a href="" class="btn btn-primary">go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 m-auto">
+                <div class="card my-2 border-0 shadow ">
+                    <img src="./img/3.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="text-center fw-bold">bootstrap card-1</h3>
+                        </div>
+                        <hr class="w-75 mx-auto">
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nesciunt accusantium
+                                debitis, itaque odio reiciendis quibusdam adipisci deleniti excepturi fuga.</p>
+                        </div>
+                        <a href="" class="btn btn-primary">go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<svg class="wave"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#273036" fill-opacity="1"
+        d="M0,224L40,234.7C80,245,160,267,240,266.7C320,267,400,245,480,208C560,171,640,117,720,80C800,43,880,21,960,16C1040,11,1120,21,1200,37.3C1280,53,1360,75,1400,85.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+    </path>
+</svg>
+</section>
+
+
+</body>
+</html>
